@@ -85,6 +85,76 @@ const capitals = [
   { city: 'Rome', timezone: 'Europe/Rome' },
   { city: 'Cairo', timezone: 'Africa/Cairo' },
   { city: 'Lima', timezone: 'America/Lima' },
+  { city: 'Addis Ababa', timezone: 'Africa/Addis_Ababa' },
+  { city: 'Algiers', timezone: 'Africa/Algiers' },
+  { city: 'Antananarivo', timezone: 'Indian/Antananarivo' },
+  { city: 'Asunción', timezone: 'America/Asuncion' },
+  { city: 'Bamako', timezone: 'Africa/Bamako' },
+  { city: 'Banjul', timezone: 'Africa/Banjul' },
+  { city: 'Beirut', timezone: 'Asia/Beirut' },
+  { city: 'Belgrade', timezone: 'Europe/Belgrade' },
+  { city: 'Cayenne', timezone: 'America/Cayenne' },
+  { city: 'Damascus', timezone: 'Asia/Damascus' },
+  { city: 'Dodoma', timezone: 'Africa/Dar_es_Salaam' },
+  { city: 'Doha', timezone: 'Asia/Qatar' },
+  { city: 'Freetown', timezone: 'Africa/Freetown' },
+  { city: 'Gaborone', timezone: 'Africa/Gaborone' },
+  { city: 'Georgetown', timezone: 'America/Guyana' },
+  { city: 'Havana', timezone: 'America/Havana' },
+  { city: 'Harare', timezone: 'Africa/Harare' },
+  { city: 'Honiara', timezone: 'Pacific/Guadalcanal' },
+  { city: 'Johannesburg', timezone: 'Africa/Johannesburg' },
+  { city: 'Libreville', timezone: 'Africa/Libreville' },
+  { city: 'Lusaka', timezone: 'Africa/Lusaka' },
+  { city: 'Malabo', timezone: 'Africa/Malabo' },
+  { city: 'Maputo', timezone: 'Africa/Maputo' },
+  { city: 'Monrovia', timezone: 'Africa/Monrovia' },
+  { city: 'Niamey', timezone: 'Africa/Niamey' },
+  { city: 'Port Louis', timezone: 'Indian/Mauritius' },
+  { city: 'Porto-Novo', timezone: 'Africa/Porto-Novo' },
+  { city: 'Reykjavik', timezone: 'Atlantic/Reykjavik' },
+  { city: 'Tashkent', timezone: 'Asia/Tashkent' },
+  { city: 'Windhoek', timezone: 'Africa/Windhoek' },
+{ city: 'Andorra la Vella', timezone: 'Europe/Andorra' },
+{ city: 'Belgrade', timezone: 'Europe/Belgrade' },
+{ city: 'Bergen', timezone: 'Europe/Oslo' },
+{ city: 'Bern', timezone: 'Europe/Zurich' },
+{ city: 'Brno', timezone: 'Europe/Prague' },
+{ city: 'Cardiff', timezone: 'Europe/London' },
+{ city: 'Cologne', timezone: 'Europe/Berlin' },
+{ city: 'Cork', timezone: 'Europe/Dublin' },
+{ city: 'Dresden', timezone: 'Europe/Berlin' },
+{ city: 'Edinburgh', timezone: 'Europe/London' },
+{ city: 'Geneva', timezone: 'Europe/Zurich' },
+{ city: 'Gibraltar', timezone: 'Europe/Gibraltar' },
+{ city: 'Hamburg', timezone: 'Europe/Berlin' },
+{ city: 'Innsbruck', timezone: 'Europe/Vienna' },
+{ city: 'Lausanne', timezone: 'Europe/Zurich' },
+{ city: 'Leeds', timezone: 'Europe/London' },
+{ city: 'Leipzig', timezone: 'Europe/Berlin' },
+{ city: 'Liverpool', timezone: 'Europe/London' },
+{ city: 'Lyon', timezone: 'Europe/Paris' },
+{ city: 'Marseille', timezone: 'Europe/Paris' },
+{ city: 'Naples', timezone: 'Europe/Rome' },
+{ city: 'Nuremberg', timezone: 'Europe/Berlin' },
+{ city: 'Porto', timezone: 'Europe/Lisbon' },
+{ city: 'Rotterdam', timezone: 'Europe/Amsterdam' },
+{ city: 'Salzburg', timezone: 'Europe/Vienna' },
+{ city: 'Seville', timezone: 'Europe/Madrid' },
+{ city: 'Thessaloniki', timezone: 'Europe/Athens' },
+{ city: 'Turin', timezone: 'Europe/Rome' },
+{ city: 'Valencia', timezone: 'Europe/Madrid' },
+{ city: 'Zaragoza', timezone: 'Europe/Madrid' },
+{ city: 'Anchorage', timezone: 'America/Anchorage' },
+{ city: 'Baltimore', timezone: 'America/New_York' },
+{ city: 'Boston', timezone: 'America/New_York' },
+{ city: 'Calgary', timezone: 'America/Edmonton' },
+{ city: 'Charlotte', timezone: 'America/New_York' },
+{ city: 'Denver', timezone: 'America/Denver' },
+{ city: 'Detroit', timezone: 'America/Detroit' },
+{ city: 'Houston', timezone: 'America/Chicago' },
+{ city: 'Kansas City', timezone: 'America/Chicago' },
+{ city: 'Philadelphia', timezone: 'America/New_York' },
 ];
 
 let clockInterval;
@@ -133,13 +203,21 @@ const randomColor = () => {
 const updateColors = () => {
   const bgColor = randomColor();
   const textColor = randomColor();
+
   body.style.backgroundColor = bgColor;
   body.style.color = textColor;
   input.style.backgroundColor = textColor;
   input.style.color = bgColor;
   leftArrow.style.color = textColor;
   rightArrow.style.color = textColor;
+
+  // Uppdatera färgen för h1
+  const pageTitle = document.getElementById('page-title'); // Lägg till detta
+  if (pageTitle) {
+    pageTitle.style.color = textColor; // H1 får samma färg som pilarna
+  }
 };
+
 
 // Autocomplete
 const handleAutocomplete = () => {
