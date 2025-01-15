@@ -19,7 +19,7 @@ const capitals = [
   { city: 'Brussels', timezone: 'Europe/Brussels' },
   { city: 'Bucharest', timezone: 'Europe/Bucharest' },
   { city: 'Budapest', timezone: 'Europe/Budapest' },
-  { city: 'Canberra', timezone: 'Australia/Sydney' },
+  { city: 'Melbourne', timezone: 'Australia/Sydney' },
   { city: 'Caracas', timezone: 'America/Caracas' },
   { city: 'Casablanca', timezone: 'Africa/Casablanca' },
   { city: 'Chicago', timezone: 'America/Chicago' },
