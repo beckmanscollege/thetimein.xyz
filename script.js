@@ -155,6 +155,28 @@ const capitals = [
 { city: 'Houston', timezone: 'America/Chicago' },
 { city: 'Kansas City', timezone: 'America/Chicago' },
 { city: 'Philadelphia', timezone: 'America/New_York' },
+  { city: 'Cancún', timezone: 'America/Cancun' },
+{ city: 'San Diego', timezone: 'America/Los_Angeles' },
+{ city: 'Las Vegas', timezone: 'America/Los_Angeles' },
+{ city: 'Honolulu', timezone: 'Pacific/Honolulu' },
+{ city: 'Montevideo', timezone: 'America/Montevideo' },
+{ city: 'Santiago', timezone: 'America/Santiago' },
+{ city: 'Quito', timezone: 'America/Guayaquil' },
+{ city: 'Cape Town', timezone: 'Africa/Johannesburg' },
+{ city: 'Dakar', timezone: 'Africa/Dakar' },
+{ city: 'Perth', timezone: 'Australia/Perth' },
+{ city: 'Adelaide', timezone: 'Australia/Adelaide' },
+{ city: 'Hobart', timezone: 'Australia/Hobart' },
+{ city: 'Christchurch', timezone: 'Pacific/Auckland' },
+{ city: 'Ulaanbaatar', timezone: 'Asia/Ulaanbaatar' },
+{ city: 'Tbilisi', timezone: 'Asia/Tbilisi' },
+{ city: 'Yerevan', timezone: 'Asia/Yerevan' },
+{ city: 'Malé', timezone: 'Indian/Maldives' },
+{ city: 'Colombo', timezone: 'Asia/Colombo' },
+{ city: 'Kathmandu', timezone: 'Asia/Kathmandu' },
+{ city: 'Novosibirsk', timezone: 'Asia/Novosibirsk' },
+{ city: 'Astana', timezone: 'Asia/Almaty' },
+{ city: 'Hanoi', timezone: 'Asia/Ho_Chi_Minh' }
 ];
 
 let clockInterval;
